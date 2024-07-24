@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: nadjemia <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: noah <noah@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/06 11:11:55 by nadjemia          #+#    #+#              #
-#    Updated: 2023/11/12 15:03:27 by nadjemia         ###   ########.fr        #
+#    Updated: 2024/07/24 12:26:46 by noah             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,7 +43,10 @@ SRCS = ft_atoi.c \
        ft_strtrim.c \
        ft_substr.c \
        ft_tolower.c \
-       ft_toupper.c 
+       ft_toupper.c \
+       get_next_line.c \
+       get_next_line_utils.c \
+       ft_realloc.c
 
 OBJS = $(SRCS:.c=.o)
 

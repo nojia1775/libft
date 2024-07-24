@@ -3,16 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nadjemia <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: noah <noah@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 10:57:44 by nadjemia          #+#    #+#             */
-/*   Updated: 2023/11/11 13:37:58 by nadjemia         ###   ########.fr       */
+/*   Updated: 2024/07/24 12:26:27 by noah             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 
 # define LIBFT_H
+# define BUFFER_SIZE 5
 
 # include <stdio.h>
 # include <stdlib.h>
@@ -63,6 +64,13 @@ char		*ft_strtrim(char const *s1, char const *set);
 char		*ft_substr(char const *s, unsigned int start, size_t len);
 int			ft_tolower(int c);
 int			ft_toupper(int c);
+char		*get_next_line(int fd);
+int			ft_isnl(char *buf, int len, int *i);
+char		*ft_str(char *buffer);
+int			ft_verif(int r, char *buf, char *buffer);
+void		ft_clean(char *buffer);
+void		*ft_realloc(void *ptr, size_t size);
+
 typedef struct s_list
 {
 	void			*content;
